@@ -1,5 +1,5 @@
-  /* Improved Typography & Spacing */
-  :root {
+/* Improved Typography & Spacing */
+:root {
     --matte-gold: #C6A561;
     --deep-gold: #A88B4A;
     --rich-black: #000000;
@@ -1166,5 +1166,102 @@ footer {
     
     .footer-col {
         min-width: 100%; /* Full width columns */
+    }
+}
+
+/* New responsive fixes for mobile overflow issues */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+        width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .stat-item {
+        min-width: 100%;
+        padding: 20px;
+    }
+    
+    .address-overlay p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+    
+    .hero-cta .btn {
+        width: 100%;
+        padding: 16px;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .mobile-menu {
+        width: 95%;
+        padding: 100px 20px 40px;
+    }
+    
+    .hero {
+        min-height: 600px;
+    }
+    
+    .service-img {
+        height: 250px;
+    }
+    
+    .gallery-item {
+        height: 300px;
+    }
+    
+    .gallery-caption {
+        padding: 20px;
+        font-size: 1rem;
+    }
+    
+    .testimonial {
+        padding: 30px 20px;
+    }
+    
+    .quote {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+    
+    .client {
+        font-size: 1.1rem;
+    }
+    
+    .footer-about, .footer-links a {
+        font-size: 1rem;
+    }
+    
+    .footer-heading {
+        font-size: 1.3rem;
     }
 }
